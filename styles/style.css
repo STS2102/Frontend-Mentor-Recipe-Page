@@ -40,6 +40,18 @@ main{
     margin: 0rem 1.5rem 0rem 1.5rem;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bkg-color);
+    box-sizing: border-box;
+    padding: 0rem 0rem 0rem 0rem;
+    gap: 1rem;
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+
+}
+
 .Img-Box{
     display: flex;
     width: 100%;
@@ -154,5 +166,29 @@ li::marker {
 
 ul,ol {
     padding-left: 1rem; 
+}
+
+/* Media Queries to Adjust for Mobile Design */
+
+@media (max-width: 376px) {
+    .wrapper {
+        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    main{
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        border-radius: 0rem;
+
+    }
+
+    body{
+        margin: 0rem;
+        background-color: var(--card-bkg-color);
+        
+    }
+    .Img-Box{
+        border-radius: 0rem;
+    }
 }
 

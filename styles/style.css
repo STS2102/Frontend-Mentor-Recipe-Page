@@ -1,0 +1,158 @@
+:root{
+    --card-bkg-color: hsl(0, 0%, 100%);
+    --main-bkg-color: hsl(30, 54%, 90%);
+    --section-header-color: hsl(14, 45%, 36%);
+    --details-header-color: hsl(332, 51%, 32%);
+    --details-card-bkg-color: hsl(330, 100%, 98%);
+    --bold-text-color: hsl(24, 5%, 18%);
+    --paragraph-text-color: hsl(24, 5%, 18%);
+    --normal-text-color: hsl(30, 10%, 34%);
+    --txt-weight-YS: 400;
+    --norm-txt-weight-O: 400;
+    --med-txt-weight-O: 600;
+    --bold-txt-weight-O: 700;
+    --font-YS: "Young Serif",sans-serif;
+    --font-O: "Outfit", sans-serif;
+
+}
+
+/* Default root font sze is 16px. */
+
+body{
+    display: flex;
+    background-color: var(--main-bkg-color);
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bkg-color);
+    box-sizing: border-box;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    gap: 1rem;
+    border-radius: 1.125rem;
+    max-width: 46rem;
+    width: 100%;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.Img-Box{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.Main-Img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.Title{
+    color: var(--bold-text-color);
+    font-weight: var(--txt-weight-YS);
+    font-family: var(--font-YS);
+    font-size: 1.5rem;
+    margin: 0rem;
+    display: block;
+}
+
+.Description {
+    font-size: 1rem;
+    color: var(--normal-text-color);
+    font-family: var(--font-O);
+    font-weight: var(--norm-txt-weight-O);
+    margin: 0rem;
+    display: block;
+}
+
+.Details-Card {
+    background-color: var(--details-card-bkg-color);
+}
+
+.Details-Card {
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.Prep {
+    color: var(--details-header-color);
+    margin: 0rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+}
+
+.Ingredients-Card {
+    border-bottom: 0.01rem solid var(--normal-text-color);
+}
+
+.Instructions-Card {
+    border-bottom: 0.01rem solid var(--normal-text-color);
+}
+
+.Nutrition-Description {
+    color: var(--normal-text-color);
+    font-size: 1rem;
+    font-family: var(--font-O);
+    font-weight: var(--norm-txt-weight-O);
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+}
+
+td {
+    color: var(--section-header-color);
+    font-family: var(--font-O);
+    font-weight: var(--bold-txt-weight-O);
+    font-size: 1rem;
+}
+
+tr {
+    border-bottom: 0.01rem solid var(--normal-text-color);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th {
+    font-family: var(--font-O);
+    font-size: 1rem;
+    color: var(--normal-text-color);
+    font-weight: var(--norm-txt-weight-O);
+
+}
+
+.Ingredients, .Instructions, .Nutrition {
+    color: var(--section-header-color);
+    font-size: 1.25rem;
+    font-family: var(--font-YS);
+}
+
+strong{
+    color: var(--bold-text-color);
+}
+li {
+    color: var(--normal-text-color);
+}
+
+/* Styling the bullet points separate to the text. */
+li::marker {
+    color: var(--section-header-color);
+}
+
+ul,ol {
+    padding-left: 1rem; 
+}
+
